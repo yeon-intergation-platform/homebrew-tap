@@ -8,17 +8,17 @@
 class DiscordAiNetworkBot < Formula
   desc "커뮤니티 Provider Agent — 내 PC의 로컬 Ollama 를 중앙 서버에 연결"
   homepage "https://github.com/Hyeonjun0527/discord-ai-network-bot"
-  version "0.24.0"
+  version "0.25.0"
   license "MIT"
 
   on_macos do
     url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/discord-ai-network-bot-macos"
-    sha256 "1bd6ef76757130ea355aef2add961904b8b3735ecbd98e2e231f972e870a2de0"
+    sha256 "2089aa3383df80733718a5bbc27fe04ec920b793c36ad4e650dae7144ecf50aa"
   end
 
   on_linux do
     url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/discord-ai-network-bot-linux"
-    sha256 "36fd19c9219cf667d57c6340324f2fe60360b850230158bcb167d3697c07aa31"
+    sha256 "e8fac3a02742fabdaf26d7b541419533fdabdcff918d393b325eadf0639049d7"
   end
 
   def install
