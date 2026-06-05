@@ -4,30 +4,30 @@
 #
 # 사용자 설치:
 #   brew tap yeon-intergation-platform/tap
-#   brew install discord-ai-network-bot
-class DiscordAiNetworkBot < Formula
+#   brew install nexa-agent
+class NexaAgent < Formula
   desc "커뮤니티 Provider Agent — 내 PC의 로컬 Ollama 를 중앙 서버에 연결"
   homepage "https://github.com/Hyeonjun0527/discord-ai-network-bot"
-  version "0.28.1"
+  version "0.30.1"
   license "MIT"
 
   on_macos do
-    url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/discord-ai-network-bot-macos"
-    sha256 "e8b7b25cf85b81468e08c9dc3dd203486f6407d3f9feb692690230f255f5f786"
+    url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/nexa-agent-macos"
+    sha256 "a3fb7589bc687c83fd4559703fd44cd58522f140bf1faf8ef7fcbf2823127629"
   end
 
   on_linux do
-    url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/discord-ai-network-bot-linux"
-    sha256 "a99ccdb63970bd0afdd523511203f39682c79a31ec9da7b69c61f10436375403"
+    url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/nexa-agent-linux"
+    sha256 "7a49e2af761ca3834e9bfadc74b06b904b53711ea66bdde393ec038fc4bd4e07"
   end
 
   def install
     # 단일 실행파일을 표준 이름으로 설치(일반 사용자 prefix, 관리자 불필요).
-    binary = Dir["discord-ai-network-bot-*"].first
-    bin.install binary => "discord-ai-network-bot"
+    binary = Dir["nexa-agent-*"].first
+    bin.install binary => "nexa"
   end
 
   test do
-    assert_match "discord-ai-network-bot", shell_output("#{bin}/discord-ai-network-bot --version")
+    assert_match "nexa", shell_output("#{bin}/nexa --version")
   end
 end
