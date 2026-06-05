@@ -7,8 +7,8 @@
 #
 # 릴리스마다 CI(agent-build.yml)가 version·sha256 을 채워 tap 저장소(Casks/)로 보낸다.
 cask "nyassistant" do
-  version "0.28.0"
-  sha256 "db6be441cdb66bce3b01cae5ecd12da79364dd0c02be49a4c32301a8042c386e"
+  version "0.28.1"
+  sha256 "117997d3fd03f8dd43cf5804ca1494da081d8adf8703d7698c47c8d3d068276b"
 
   url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/nyassistant-macos.zip"
   name "냥시스턴트"
