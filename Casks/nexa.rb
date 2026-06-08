@@ -1,4 +1,4 @@
-# Homebrew **Cask** (tap 용) — 데스크톱 GUI 앱(NEXA.app). brew 가 url 의 sha256 을 자동 검증하고
+# Homebrew **Cask** (tap 용) — 데스크톱 GUI 앱(Nexa.app). brew 가 url 의 sha256 을 자동 검증하고
 # .app 을 응용 프로그램에 설치한다(관리자 불필요, brew 설치라 Gatekeeper 격리 미부여). winget(Windows GUI)과
 # 동일하게 **맥에서 보이는 그 데스크톱 앱**을 설치한다. CLI/헤드리스가 필요하면 formula(nexa-agent).
 #
@@ -7,15 +7,15 @@
 #
 # 릴리스마다 CI(agent-build.yml)가 version·sha256 을 채워 tap 저장소(Casks/)로 보낸다.
 cask "nexa" do
-  version "0.31.0"
-  sha256 "18b67fea1f5b9c8c62667daf9797d956086ef3c026a45e1f958e9749a4ba7990"
+  version "0.32.1"
+  sha256 "e3d25c4ce2c02577db2d41e216d8397249165de10a6e60d0cb1e12a05f04e68d"
 
   url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/nexa-macos.zip"
-  name "NEXA"
-  desc "커뮤니티 Provider Agent 데스크톱 앱 — 내 PC 로컬 Ollama 를 중앙 서버에 연결"
+  name "Nexa"
+  desc "Nexa 데스크톱 앱 — 내 로컬 AI모델을 디스코드 서버/채널에 공유"
   homepage "https://github.com/Hyeonjun0527/discord-ai-network-bot"
 
-  app "NEXA.app"
+  app "Nexa.app"
 
   zap trash: [
     "~/.config/nexa",
