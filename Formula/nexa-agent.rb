@@ -8,17 +8,17 @@
 class NexaAgent < Formula
   desc "커뮤니티 Provider Agent — 내 PC의 로컬 Ollama 를 중앙 서버에 연결"
   homepage "https://github.com/Hyeonjun0527/discord-ai-network-bot"
-  version "0.32.5"
+  version "0.32.6"
   license "MIT"
 
   on_macos do
     url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/nexa-agent-macos"
-    sha256 "680e5cc347bbef327d31ec011bc70c640d4d6c4e493913e0aebe066d60e47890"
+    sha256 "96dc385ec563affa7d6aa8d1c925b3af98fea09d425869a7aaa4b5dc66141dec"
   end
 
   on_linux do
     url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/nexa-agent-linux"
-    sha256 "46b4960242a561f6b4063e84d9d75bbb3b150434927f5186a261c79b8ee655ab"
+    sha256 "d84049cf92ed66530d2277235bfd5ac1d09b14abdf9652a3a02035f5d8a8c14f"
   end
 
   def install
