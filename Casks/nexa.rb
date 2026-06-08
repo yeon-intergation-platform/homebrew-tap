@@ -7,8 +7,8 @@
 #
 # 릴리스마다 CI(agent-build.yml)가 version·sha256 을 채워 tap 저장소(Casks/)로 보낸다.
 cask "nexa" do
-  version "0.36.0"
-  sha256 "057935d5eb1e643bc451da188e3164d744e373cca675a847e4dd4f9f87659670"
+  version "0.36.2"
+  sha256 "113247fa5682ec65d60000f39e0f0ccdde979edf8a72bb5153b00697a3d01ce1"
 
   url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/nexa-macos.zip"
   name "Nexa"
