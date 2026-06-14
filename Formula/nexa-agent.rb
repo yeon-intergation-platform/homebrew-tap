@@ -7,18 +7,18 @@
 #   brew install nexa-agent
 class NexaAgent < Formula
   desc "커뮤니티 Provider Agent — 내 PC의 로컬 Ollama 를 중앙 서버에 연결"
-  homepage "https://github.com/Hyeonjun0527/discord-ai-network-bot"
-  version "0.52.7"
+  homepage "https://github.com/yeon-intergation-platform/nexa-releases"
+  version "0.52.8"
   license "MIT"
 
   on_macos do
-    url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/nexa-agent-macos"
-    sha256 "25bec4b930255de83a5fa0eefbb85021e9425bc028d65f0d1b2c2293e5f3f401"
+    url "https://github.com/yeon-intergation-platform/nexa-releases/releases/download/agent-v#{version}/nexa-agent-macos"
+    sha256 "c10a517f10c1bcaa9a753bd49c7d4daa217b354ab305390c4a18228aa5ff1068"
   end
 
   on_linux do
-    url "https://github.com/Hyeonjun0527/discord-ai-network-bot/releases/download/agent-v#{version}/nexa-agent-linux"
-    sha256 "2515d889fe493006cd8f48bb6b7156101b17b87841cae36afe400460ae6c259c"
+    url "https://github.com/yeon-intergation-platform/nexa-releases/releases/download/agent-v#{version}/nexa-agent-linux"
+    sha256 "be95b31861e96fd95a6e834a443500be8e846937a0eac8ee871507fbf93db61a"
   end
 
   def install
