@@ -7,8 +7,8 @@
 #
 # 릴리스마다 CI(agent-build.yml)가 version·sha256 을 채워 tap 저장소(Casks/)로 보낸다.
 cask "nexa" do
-  version "0.52.9"
-  sha256 "c71a475773fc4a02656c6e7a8e2f62b6c2ca728059f8779b4a5aa3d1911136d2"
+  version "0.53.1"
+  sha256 "6d97981179b6af3fb40d2db058d6177dcc1690719ce5a7078f0463575d30b5ae"
 
   url "https://github.com/yeon-intergation-platform/nexa-releases/releases/download/agent-v#{version}/nexa-macos.zip"
   name "Nexa"
