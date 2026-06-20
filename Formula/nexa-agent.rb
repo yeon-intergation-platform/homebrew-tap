@@ -8,17 +8,17 @@
 class NexaAgent < Formula
   desc "커뮤니티 Provider Agent — 내 PC의 로컬 Ollama 를 중앙 서버에 연결"
   homepage "https://github.com/yeon-intergation-platform/nexa-releases"
-  version "0.59.1"
+  version "0.60.0"
   license "MIT"
 
   on_macos do
     url "https://github.com/yeon-intergation-platform/nexa-releases/releases/download/agent-v#{version}/nexa-agent-macos"
-    sha256 "dc3167f8f7e5ab2e950784057dc8d68162dfa06cf8f12915455baa672367d92f"
+    sha256 "9b5610c920f8bafe81238bc9247a6a1f8b810fcb79f588346134ba21a6e15bcf"
   end
 
   on_linux do
     url "https://github.com/yeon-intergation-platform/nexa-releases/releases/download/agent-v#{version}/nexa-agent-linux"
-    sha256 "3f8263c44186e37b9832d212ffc4f7dc69d823a3e7035ceb8755f604a714e922"
+    sha256 "079a92c58fc9d6095fc460f9a9e291c143b1681b7a13c12b67a23f92a6fd5231"
   end
 
   def install
